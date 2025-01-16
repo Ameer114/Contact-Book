@@ -32,7 +32,6 @@ def view():
         else:
             break
 
-
 def search():
     print("\n----Search Contact----")
     name=input("Enter Name:")
@@ -55,7 +54,6 @@ def search():
                 else:
                     break
 
- 
 def update(name):
     
     with open(path,"r")as file:
@@ -84,7 +82,6 @@ def delete(name):
                 file.write(f"{c_name},{c_num}")
             else:
                 print(f"\ncontact for {c_name} deleted successfully! ")
-
 
 while(1):
     print("\n1.Add\n2.View All\n3.Search\n4.exit")
