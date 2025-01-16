@@ -62,8 +62,6 @@ def update(name):
         con=file.readlines()
     
     with open(path,"w")as file:
-        file.write("")
-    with open(path,"a")as file:
         for c in con:
             c_name,c_num=c.split(",")
             if name==c_name:
@@ -80,8 +78,6 @@ def delete(name):
     with open(path,"r") as file:
         li=file.readlines()
     with open(path,"w") as file:
-        file.write("")
-    with open(path,"a")as file:
         for i in li:
             c_name,c_num=i.split(",")
             if c_name!=name:
